@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Game</title>
+
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body oncontextmenu="return false;">
+    <div id="gameAreaWrapper" style="display:none;">
+        <div id="status"><span class="title">Leaderboard</span></div>
+        <canvas tabindex="1" id="cvs"></canvas>
+    </div>
+    <img src="img/water0hk.jpg" id="water"  style="display:none;">
+    <img src="img/watertexture.png" id="water1"  style="display:none;">
+    <img src="img/1.jpg" id="water2"  style="display:none;">
+    <div id="startMenuWrapper">
+        <div id="startMenu">
+            <p>Your Online Game</p>
+            <input type="text" tabindex="0" autofocus placeholder="Enter your name here" id="playerNameInput" />
+            <b class="input-error">Nick name must be alphanumeric characters only!</b>
+            <br />
+            <button id="startButton">Play</button>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/global.js"></script>
+    <script src="./js/canvas.js"></script>
+    <script src="./js/game.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
